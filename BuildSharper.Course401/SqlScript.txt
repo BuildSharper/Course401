@@ -1,0 +1,16 @@
+﻿USE [BuildSharper]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Message](
+	[MessageId] [int] IDENTITY(1,1) NOT NULL,
+	[MessageText] [varchar](1000) NOT NULL,
+	[DateSent] [datetime] NOT NULL
+) ON [PRIMARY]
+GO
+
